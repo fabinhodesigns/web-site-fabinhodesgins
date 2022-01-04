@@ -149,7 +149,7 @@ main {
 
 #home .image img,
 #home .image::before {
-  border-radius: 0.25rem;
+  border-radius: 0.50rem;
 }
 
 #home .text {
