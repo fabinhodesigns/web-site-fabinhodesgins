@@ -17,9 +17,6 @@ img {
     height: auto;
 }
 
-
-/*====  VARIAVEIS ============================ */
-
  :root {
     --header-height: 4.5rem;
     --hue: 159;
@@ -31,9 +28,6 @@ img {
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
 }
-
-
-/*===  BASE ============================ */
 
 html {
     scroll-behavior: smooth;
@@ -77,9 +71,6 @@ body {
     height: 1px;
     background: linear-gradient( 270deg, hsla(var(--hue), 65%, 88%, 0.34), hsla(var(--hue), 36%, 57%, 1));
 }
-
-
-/*====  LAYOUT ============================ */
 
 .container {
     margin-left: 1.5rem;
@@ -127,9 +118,6 @@ main {
     margin-top: calc(var(--header-height) + 2rem);
 }
 
-
-/*====  LOGO ============================ */
-
 .logo {
     font: 700 1.31rem 'Poppins', sans-serif;
     color: var(--title-color);
@@ -139,10 +127,11 @@ main {
     color: var(--base-color);
 }
 
+.logo-alt span {
+    color: var(--body-color);
+}
 
-/*====  NAVEGACAO ============================ */
-
-nav {
+s nav {
     height: var(--header-height);
     display: flex;
     align-items: center;
@@ -189,9 +178,6 @@ nav .menu ul {
     display: none;
 }
 
-
-/* MOSTRAR MENU */
-
 nav.show .menu {
     opacity: 1;
     visibility: visible;
@@ -213,9 +199,6 @@ nav.show ul.grid {
     gap: 4rem;
 }
 
-
-/* TOGGLE MENU */
-
 .toggle {
     color: var(--base-color);
     font-size: 1.5rem;
@@ -236,9 +219,6 @@ nav.show div.icon-close {
     opacity: 1;
     top: 1.5rem;
 }
-
-
-/*====  HOME ============================ */
 
 #home {
     overflow: hidden;
@@ -287,9 +267,6 @@ nav.show div.icon-close {
     margin-bottom: 2rem;
 }
 
-
-/*====  SOBRE ============================ */
-
 #about {
     background: white;
 }
@@ -327,9 +304,6 @@ nav.show div.icon-close {
     margin-right: 1.5rem;
 }
 
-
-/*====  SERVICOS ============================ */
-
 .cards.grid {
     gap: 1.5rem;
 }
@@ -353,9 +327,6 @@ nav.show div.icon-close {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
 }
-
-
-/*====  DEPOIMENTOS ============================ */
 
 #testimonials {
     background: white;
@@ -424,9 +395,6 @@ nav.show div.icon-close {
     background: var(--base-color);
 }
 
-
-/*====  CONTATO ============================ */
-
 #contact .grid {
     gap: 4rem;
 }
@@ -452,4 +420,55 @@ nav.show div.icon-close {
 
 #contact ul li i {
     color: var(--base-color);
+}
+
+footer {
+    background: var(--base-color);
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+footer .social a {
+    margin-right: 2rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .social a:hover {
+    transform: translateY(-8px);
+}
+
+.back-to-top {
+    background: var(--base-color);
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+    clip-path: circle();
+    color: var(--text-color-light);
+    font-size: 1.5rem;
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.back-to-top .show {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
 }
