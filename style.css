@@ -280,7 +280,7 @@ nav.show div.icon-close {
     content: "";
     height: 100%;
     width: 50%;
-    background-image: url("/assets/img/fotos/foto1.jpeg");
+    background-image: url("assets/img/fotos/foto1.jpeg");
     position: absolute;
     top: -5.8%;
     left: 43.7%;
