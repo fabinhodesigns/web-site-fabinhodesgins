@@ -1,5 +1,5 @@
-# Beauty-Salon
+# @fabinhodesigns
 
-**Aplicação Web totalmente responsiva voltada para o mercado dos salões de beleza.**
+**Aplicação Web totalmente responsiva sendo usada como currículo e página de designer.**
 
-**Em andamento...**
+**Concluído.**
