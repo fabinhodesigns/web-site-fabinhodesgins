@@ -15,7 +15,7 @@ a {
 }
 
 img {
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
@@ -25,12 +25,12 @@ img {
 :root {
     --header-height: 4.5rem;
     /* colors */
-    --hue: 159;
+    --hue: 300;
     /* HSL color mode */
-    --base-color: hsl(var(--hue) 36% 57%);
-    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color: hsl(var(--hue) 36% 20%);
+    --base-color-second: hsl(var(--hue) 65% 10%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
-    --title-color: hsl(var(--hue) 41% 10%);
+    --title-color: hsl(var(--hue) 41% 20%);
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
@@ -53,6 +53,11 @@ body {
     color: var(--text-color);
     background: var(--body-color);
     -webkit-font-smoothing: antialiased;
+}
+
+.images-cards {
+    border-radius: 10px;
+    width: 14.5rem;
 }
 
 .title {
@@ -98,6 +103,10 @@ body {
 .grid {
     display: grid;
     gap: 2rem;
+}
+
+.text-light {
+    color: white !important;
 }
 
 .section {
@@ -270,17 +279,22 @@ nav.show div.icon-close {
 #home .image::before {
     content: "";
     height: 100%;
-    width: 100%;
-    background: var(--base-color-second);
+    width: 50%;
+    background-image: url("/assets/img/fotos/foto1.jpeg");
     position: absolute;
-    top: -16.8%;
-    left: 16.7%;
+    top: -5.8%;
+    left: 43.7%;
     z-index: 0;
+    background-size: cover;
+    filter: blur(2px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
 #home .image img {
     position: relative;
-    right: 2.93rem;
+    right: -2.07rem;
+    top: 0rem;
 }
 
 #home .image img,
@@ -323,8 +337,8 @@ nav.show div.icon-close {
     width: 100%;
     background: var(--base-color-second);
     position: absolute;
-    top: -8.3%;
-    left: -33%;
+    top: -5.3%;
+    left: -7%;
     z-index: 0;
 }
 
@@ -335,6 +349,10 @@ nav.show div.icon-close {
 #about .image img,
 #about .image::before {
     border-radius: 0.25rem;
+}
+
+.style-image {
+    left: 0.5rem;
 }
 
 #about .text {
@@ -637,6 +655,26 @@ footer .social a:hover {
     footer .logo {
         font-size: 2.25rem;
     }
+    #home .image::before {
+        content: "";
+        height: 100%;
+        width: 50%;
+        background-image: url("/assets/img/fotos/foto1.jpeg");
+        position: absolute;
+        top: -26.8%;
+        left: 60.7%;
+        z-index: 0;
+        background-size: cover;
+        filter: blur(2px);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+    }
+    #home .image img {
+        position: relative;
+        right: -9.07rem;
+        top: -6rem;
+        transform: translateZ(20px);
+    }
 }
 
 
@@ -649,6 +687,26 @@ footer .social a:hover {
      :root {
         --title-font-size: 2.25rem;
         --subtitle-font-size: 1.125rem;
+    }
+    #home .image::before {
+        content: "";
+        height: 100%;
+        width: 50%;
+        background-image: url("/assets/img/fotos/foto1.jpeg");
+        position: absolute;
+        top: -26.8%;
+        left: 60.7%;
+        z-index: 0;
+        background-size: cover;
+        filter: blur(2px);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+    }
+    #home .image img {
+        position: relative;
+        right: -9.07rem;
+        top: -6rem;
+        transform: translateZ(20px);
     }
 }
 
