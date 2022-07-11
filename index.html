@@ -1,236 +1,156 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>@fabinhodesigns</title>
-
-    <link rel="stylesheet" href="assets/fonts/style.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="icon" href="assets/img/fotos/iconPagr.jpg">
 </head>
 
 <body>
     <header id="header">
-        <nav class="container">
-            <a class="logo" href="#">@fabinho<span>design`s</span>.</a>
-            <div class="menu">
-                <ul class="grid">
-                    <li><a class="title" href="#home">Início</a></li>
-                    <li><a class="title" href="#about">Sobre</a></li>
-                    <li><a class="title" href="#services">Artes</a></li>
-                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
-                    <li><a class="title" href="#contact">Contato</a></li>
-                </ul>
-            </div>
-            <div class="toggle icon-menu"></div>
-            <div class="toggle icon-close"></div>
-        </nav>
+        <a href="#" class="logo">@fabinhodesigns</a>
+        <ul>
+            <li><a class="active" href="#">Inicío</a></li>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#works">Trabalhos</a></li>
+            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5548996084563">Contato</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </header>
 
-    <main>
-        <section class="section" id="home">
-            <div class="container grid">
-                <div class="image">
-                    <img src="assets/img/fotos/FABINHOLYON.png" />
-                </div>
-                <div class="text">
-                    <h2 class="title">Eu transformo simples fotos em artes surreais</h2>
-                    <p>
-                        Com apenas fotos fotografadas por celulares eu crio artes futuristas e motion arts.
-                    </p>
-                    <a class="button" href="#about">Ver mais</a>
-                </div>
+    <section>
+        <h2 id="text"><br></h2>
+        <img src="images/starts-fabinho.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <a href="#" id="btn">Explore</a>
+        <img src="images/buildings-fabinho.png" id="builds">
+    </section>
+    
+    <div class="container" id="about">
+        <div class="display-flex">
+            <div class="sec limit-width-50">
+                <h2>🔥Sobre mim</h2>
+                <p>Comecei na área do design com 19 anos, e hoje eu busco sempre aperfeiçoar minhas habilidades e entrar
+                    em novos desafios para evoluir sempre. Eu acredito que sempre haverá um próximo nível que podemos chegar.</p>
+                <br />
+                <p> Atualmente estudo na UFSC - Universidade Federal de Santa Catarina, no curso de Tecnologias da
+                    Informação e Comunicação (TIC). Tenho também um certificado na área de animações de vídeo e outros cursos
+                    de design e animações 3D.
+                </p>
+                <br />
             </div>
-        </section>
-
-        <div class="divider-1"></div>
-
-        <section class="section" id="about">
-            <div class="container grid">
-                <div class="image style-image">
-                    <img src="assets/img/fotos/foto2.png" />
-                </div>
-                <div class="text">
-                    <h2 class="title">Sobre mim</h2>
-                    <p>
-                        Meu nome é Fabiano Daros Freitas, mas pode me chamar de Fabinho. Desde sempre me interessei pela área da tecnologia e design. Com o meu amadurecimento, fui cada vez mais estudando sobre diversas linguagens e tecnologias.
-                    </p>
-                    <br />
-                    <p>
-                        Atualmente estudo na UFSC - Universidade Federal de Santa Catarina no curso de Tecnologias da Informação e Comunicação (TIC). Mas também possuo um curso de Motion Art e Photoshop, com ele eu pude aprimorar minhas habilidades de design, edição de vídeos
-                        e animações.
-                    </p>
-                    <br />
-                    <p>
-                        Busco sempre estudar e aprimorar sempre meus conhecimentos sobre as linguagens de programação, pois eu acredito que existe sempre  mais um nível aonde podemos chegar e ser melhores. Tenho conhecimento nas áreas de HTML, CSS, JavaScript, PHP, SQL, CodeIgnater,
-                        Git, Bootstrap e Delphi.
-                    </p>
-                </div>
+            <div class="display-flex align-items-center justify-content-space-around default-background min-width-50">
+                <img src="images/fabinho-energy.png" class="img-sections">
             </div>
-        </section>
-
-        <div class="divider-2"></div>
-
-        <section class="section" id="services">
-            <div class="container grid">
-                <header>
-                    <h2 class="title">Algumas artes</h2>
-                    <p class="subtitle">
-                        Essas são algumas artes que eu fiz e ainda faço. Todas elas estão publicadas em meu instagram <b>@fabinhodesigns</b>.
-                    </p>
-                </header>
-                <div class="cards grid">
-                    <div class="card">
-                        <img src="assets/img/fotos/foto3.png" class="images-cards"></img>
-                        <h3 class="title">Redbull te da Asas</h3>
-                        <p>Arte de bebida</p>
-                    </div>
-                    <div class="card">
-                        <img src="assets/img/fotos/foto4.png" class="images-cards"></img>
-                        <h3 class="title">Fabinho´s Burguer</h3>
-                        <p>Arte para fast food</p>
-                    </div>
-                    <div class="card">
-                        <img src="assets/img/fotos/foto5.png" class="images-cards"></img>
-                        <h3 class="title">Children Fabinho</h3>
-                        <p>Especial 12/10</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider-1"></div>
-
-        <section class="section" id="testimonials">
-            <div class="container">
-                <header>
-                    <h2 class="title">Depoimentos de quem já passou por aqui</h2>
-                </header>
-                <div class="testimonials swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="testimonial swiper-slide">
-                            <blockquote>
-                                <p>
-                                    <span>&ldquo;</span> Super indico. Trabalho maravilhoso grande profissional Fabinho...
-                                </p>
-                                <cite>
-                    <img
-                      src="assets/img/fotos/cristianaguiar.jpg"
-                      alt="Foto de Cristian Aguiar"
-                    />
-                    Cristian Aguiar
-                  </cite>
-                            </blockquote>
-                        </div>
-
-                        <div class="testimonial swiper-slide">
-                            <blockquote>
-                                <p>
-                                    <span>&ldquo;</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis saepe nam excepturi explicabo ipsa error ipsam neque
-                                </p>
-                                <cite>
-                    <img
-                      src="assets/img/fotos/secondUser.jpeg"
-                      alt="Foto de Franciele Venega"
-                    />
-                    Heloisa Santos
-                  </cite>
-                            </blockquote>
-                        </div>
-
-                        <div class="testimonial swiper-slide">
-                            <blockquote>
-                                <p>
-                                    <span>&ldquo;</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis saepe nam excepturi explicabo ipsa error ipsam neque
-                                </p>
-                                <cite>
-                    <img
-                      src="assets/img/fotos/oneUser.jpeg"
-                      alt="Fotos de Valeska Fabris"
-                    />
-                    Fernanda Souza
-                  </cite>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider-2"></div>
-
-        <section class="section" id="contact">
-            <div class="container grid">
-                <div class="text">
-                    <h2 class="title">Entre em contato comigo!</h2>
-                    <p>
-                        Gostou do meu conteúdo? Gostaria de falar comigo? Me chame atravéz do WhatsApp.
-                    </p>
-                    <a href="https://api.whatsapp.com/send?phone=+5548996084563&text=Oi Fabinho, vi seu site publicado no GitHub" class="button" target="_blank"><i class="icon-whatsapp"></i> Entrar em contato</a
-            >
-          </div>
-
-          <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i> 48 99608-4563</li>
-              <li><i class="icon-map-pin"></i> SC, Maracajá</li>
-              <li><i class="icon-mail"></i>freitasfabiano08@gmail.com</li>
-            </ul>
-          </div>
         </div>
-      </section>
+    </div>
 
-      <div class="divider-1"></div>
-    </main>
+    <div class="default-background-black min-height-2-rem"></div>
 
-    <footer class="section">
-      <div class="container grid">
-        <div class="brand">
-          <a class="logo logo-alt text-light" href="#home"
-            >@fabinho<span>designs</span>.</a
-          >
-          <p>©2022 <a class="text-light" target="_blank" href="https://instagram.com/fabinhodesigns">@fabinhodesigns</a>.</p>
-                    <p>Todos os direitos reservados.</p>
-                </div>
-
-                <div class="social grid">
-                    <a href="https://instagram.com/fabinhodesigns" target="_blank">
-                        <i class="icon-instagram"></i>
-                    </a>
-                    <a href="https://facebook.com/Fabinho070" target="_blank">
-                        <i class="icon-facebook"></i
-          ></a>
+    <div class="container">
+        <div class="display-flex">
+            <div
+                class="display-flex align-items-center black justify-content-space-around default-background min-width-50">
+                <img src="images/fabinho-smart-dark.png" class="img-sections2">
+            </div>
+            <div class="sec limit-width-50 black">
+                <h2 class="p-color-default">🎮Animações? Edições? Criações? 3D? Sem Problemas</h2>
+                <p class="p-color-default">Posso editar seus vídeos para colocar nos stories, posso transformar sua logo em uma animação 3D, consigo transformar você em um personagem dos mais famosos filmes. O que pensares, eu farei. Se liga em alguns posts do meu instagram!</p>
+            </div>
         </div>
-      </div>
-    </footer>
+    </div>
 
-    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    <div class="container">
+        <div class="section white">
+            <div class="sec black all-center">
+                <div class="limit-width-50">
+                    <h2 class="p-color-default">🕹️Alguns vídeos meus</h2>
+                    <p class="p-color-default">Estes são alguns trabalhos, aonde eu posso demonstrar para você, o PODER do MOTION DESIGN e o VFX. Estes são alguns trabalhos que eu fiz para estudo, se desejares, meu instagram tem muito mais jobs.</p>
+                </div>
+                <div class="grid">
+                    <div class="cards display-flex justify-content-center black">
+                        <div class="card">
+                            <img src="gifs/fabinhoLyon.gif" class="images-cards"></img>
+                            <h3 class="title">The Future Adventures Of PI</h3>
+                            <p>Photoshop & animação.</p>
+                        </div>
+                        <div class="card">
+                            <img src="gifs/fabinho-glasses-3d.gif" class="images-cards"></img>
+                            <h3 class="title">The Glasses Of The Future</h3>
+                            <p>Animação.</p>
+                        </div>
+                        <div class="card">
+                            <img src="gifs/tenis3D.gif" class="images-cards"></img>
+                            <h3 class="title">Holographic Sneaker?</h3>
+                            <p>Edição de Vídeo 3D.</p>
+                        </div>
+                        <div class="card">
+                            <img src="gifs/fabinhoSpace.gif" class="images-cards"></img>
+                            <h3 class="title">The Spatial Zoom</h3>
+                            <p>Photoshop & Animação.</p>
+                        </div>
+                        <div class="card">
+                            <img src="gifs/fabinho-flying.gif" class="images-cards"></img>
+                            <h3 class="title">Holographic Sneaker?</h3>
+                            <p>Photoshop & animação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <div class="container" id="about">
+        <div class="display-flex">
+            <div class="sec black limit-width-50">
+                <h2>📱Entre em contato comigo!</h2>
+                <p>Me contate por este botão, e peça seu orçamento! Vamos mudar a cara de seu instagram, canal do youtube, ou empresa!</p>
+                <br />
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5548996084563&text=Olá%20Fabinho,%20vim%20pelo%20seu%20site,%20e%20gostaria%20de%20conversar%20mais%20com%20você.">WhatsApp</a>
+            </div>
+            <div class="display-flex align-items-center justify-content-space-around black min-width-50">
+                <img src="images/fabinho-energy.png" class="img-sections">
+            </div>
+        </div>
+    </div>
 
-                    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
 
-                    <script src="main.js"></script>
-                    <script src="vanilla-tilt.js"></script>
-                    <script type="text/javascript">
-                        VanillaTilt.init(document.querySelector('.your-element'), {
-                            max: 25,
-                            speed: 400
-                        })
+<footer class="sec-footer default-background">
+    <div class="grid">
+            <div><img class="logo-fabinho-designs" src="images/fabinho-designs-logo.png" /></div>
+            <p class="p-color-default">©2022<a class="text-light" target="_blank" href="https://instagram.com/fabinhodesigns">@fabinhodesigns</a>. Todos os direitos reservados.</p>
 
-                        //It also supports NodeList
-                        VanillaTilt.init(document.querySelectorAll('.image'))
-                    </script>
+        <div class="social grid">
+            <a href="https://instagram.com/fabinhodesigns" target="_blank">
+                <i class="icon-instagram"></i>
+            </a>
+            <a href="https://facebook.com/Fabinho070" target="_blank">
+                <i class="icon-facebook"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let text = document.getElementById('text');
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let header = document.getElementById('header');
+
+    window.addEventListener('scroll', function () {
+        let value = window.scrollY;
+
+        text.style.top = 50 + value * -0.5 + '%';
+        stars.style.top = value * -.1 + 'px';
+        stars.style.left = value * .1 + 'px';
+        moon.style.top = value * -1.5 + 'px';
+        moon.style.top = value * -.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
 </body>
 
 </html>
