@@ -2,6 +2,6 @@
 
 **Aplicação Web totalmente responsiva sendo usada como currículo e página de designer.**
 
-**Concluído.**
+**Em andamendo para a adição de um novo layout.**
 
 **Link: https://fabinho070.github.io/portifolio-softskills/**
