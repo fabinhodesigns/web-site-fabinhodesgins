@@ -111,6 +111,10 @@ h1, h2, h3, h4, h5, h6, h7 {
     align-items: end;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* END DISPLAYS */
 
 /* START LIMITS AND MIN*/
@@ -203,7 +207,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 
 .logo-fabinho-designs {
-    width: 25rem;
+    width: 20rem;
 }
 
 #header ul {
@@ -232,6 +236,18 @@ h1, h2, h3, h4, h5, h6, h7 {
 }
 
 /* END HEADER */
+
+/* BUTTONS */
+
+.button-whatsapp a {
+    background-color: white;
+    color: #000222 !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/* END BUTTONS */
 
 /* ALL CENTER */
 
@@ -327,7 +343,7 @@ section img#moon {
 
 .sec-footer {
     position: relative;
-    padding: 50px 130px;
+    padding: 25px;
     background: linear-gradient(#010122, #000222, #030128, #05002d, #080030, #0b0037, #140046, #17014f, #260164, #310377, #621bb9);
 }
 
@@ -360,8 +376,19 @@ section img#moon {
 
 /* END IMAGES */
 
+/* START GRIDS */
 
-/*====  FOOTER ============================ */
+.grid {
+    display: grid;
+}
+
+.grid-template-column {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* END GRIDS */
+
+/* FOOTER */
 
 footer {
     background: var(--base-color);
@@ -400,8 +427,6 @@ footer .social a:hover {
     transform: translateY(-8px);
 }
 
-
-/* Back to top */
 
 /* START CARDS */
 
