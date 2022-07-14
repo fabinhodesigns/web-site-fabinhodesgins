@@ -13,6 +13,11 @@
 a {
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7s;
 }
 
 body {
@@ -29,7 +34,13 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
     color: white
 }
 
@@ -46,9 +57,6 @@ h1, h2, h3, h4, h5, h6, h7 {
     background: linear-gradient(to bottom, #010122 -1%, #621bb9 100%);
 }
 
-.container {
-    width: 100%;
-}
 
 .white {
     background: white !important;
@@ -60,7 +68,36 @@ h1, h2, h3, h4, h5, h6, h7 {
 
 .p-color-default {
     color: #fff !important;
-    /* font-family: 'Poppins', sans-serif; */
+}
+
+.p-color-default-small {
+    color: #fff !important;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* END DEFAULTS */
@@ -202,16 +239,12 @@ h1, h2, h3, h4, h5, h6, h7 {
 /* START HEADER */
 
 #header {
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0;
     width: 100vw;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 10000;
-    background: transparent;
+    background: rgba(0, 0, 0, 25%);
     backdrop-filter: blur(20px);
 }
 
@@ -220,6 +253,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .logo-fabinho-designs {
@@ -316,7 +350,7 @@ section #text {
     font-size: 10vw;
     text-align: center;
     line-height: 0.55;
-    font-family: 'Rancho', cursive;
+    font-family: 'Poppins', sans-serif;
     transform: translateY(-50%);
 }
 
@@ -388,6 +422,12 @@ section img#moon {
     width: 25rem;
     height: 30em;
     border-radius: 25px;
+}
+
+.img-sections3 {
+    width: 29rem;
+    height: 35em;
+    margin: 3rem;
 }
 
 .icons-social-networks {
@@ -467,23 +507,112 @@ footer .social a:hover {
 .cards.grid {
     gap: 1.5rem;
 }
+
 /* END CARDS */
 
+/* Back to top */
+
+#backToTop {
+    text-decoration: none;
+    color: white;
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 25%);
+    position: fixed;
+    right:  2rem;
+    bottom: .8rem;
+    z-index: 999;
+    display: none;
+}
+
+.back-to-top {
+    background: var(--base-color);
+    color: var(--text-color-light);
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    clip-path: circle();
+    font-size: 1.5rem;
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+    z-index: 9;
+}
+
+.width-back-to-top {
+    width: 3rem;
+    height: 3rem;
+    margin-top: .5rem;
+    padding: 0rem .4rem;
+}
+
 /* @MEDIAS SCREENS */
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
+    height: 15vh;
+    background: rgba(0, 0, 0, 75%);
+    backdrop-filter: blur(40px);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.nav-list.active {
+    transform: translateX(0);
+    z-index: 9;
+    backdrop-filter: blur(40px);
+}
 
 @media screen and (max-width: 1450px) {
     /* START GRIDS */
 
-.grid-template-column {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-/* END GRIDS */
-    
+    .grid-template-column {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* END GRIDS */
+
 }
 
 @media screen and (max-width: 1199px) {
     /* IMAGES */
-    
+
     .img-sections {
         width: 25rem;
         height: 25rem;
@@ -534,14 +663,55 @@ footer .social a:hover {
     }
 }
 
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 15vh;
+        right: 1px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 75%);
+        backdrop-filter: blur(40px) !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .img-sections3 {
+        width: 25rem;
+        height: 30em;
+        margin: 3rem;
+    }
+}
+
 @media screen and (max-width: 899px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     .grid-template-column {
         grid-template-columns: 1fr 1fr;
-    }   
+    }
 
-      /* IMAGES */
-    
-      .img-sections {
+    /* IMAGES */
+
+    .img-sections {
         width: 20rem;
         height: 20rem;
         border-radius: 25px;
@@ -585,42 +755,80 @@ footer .social a:hover {
     }
 
     /* END CARDS GRID */
-    
+
+    .img-sections3 {
+        width: 25rem;
+        height: 30em;
+        margin: 1rem;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .desktop {
         display: none;
     }
-    
+
     .mobile {
         display: block;
-    }    
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section img#moon {
+        width: 120px;
+        height: 120px;
+        left: 60vw;
+        top: 5rem !important;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .grid-template-column {
         grid-template-columns: 1fr;
-    }   
+    }
 
     .desktop {
         display: none;
     }
-    
+
     .mobile {
         display: block;
-    }   
-    
+    }
+
+    .img-sections3 {
+        width: 20rem;
+        height: 25em;
+        margin: 1rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
 }
 
 @media screen and (max-width: 350px) {
     .desktop {
         display: none;
     }
-    
+
     .mobile {
         display: block;
-    }   
+    }
+
+    section img#moon {
+        width: 100px;
+        height: 100px;
+        left: 60vw;
+        top: 5rem !important;
+    }
 }
 
 /* END @MEDIAS SCREENS */
