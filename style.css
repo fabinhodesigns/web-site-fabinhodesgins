@@ -24,13 +24,14 @@ body {
     overflow-x: hidden;
     background: linear-gradient(#010122, #000222, #030128, #05002d, #080030, #0b0037, #140046, #17014f, #260164, #310377, #621bb9);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 p {
     font-size: 0.20em;
     letter-spacing: 2px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -68,6 +69,8 @@ h7 {
 
 .p-color-default {
     color: #fff !important;
+    font-size: 16px;
+    text-align: center;
 }
 
 .p-color-default-small {
@@ -812,6 +815,12 @@ nav {
         font-size: 1rem;
         font-weight: bold;
         font-family: 'Poppins', sans-serif;
+    }
+
+    .p-color-default {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 1rem;
     }
 }
 
