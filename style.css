@@ -578,7 +578,7 @@ nav {
 }
 
 .nav-list li {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     margin-left: 32px;
 }
 
@@ -675,9 +675,9 @@ nav {
     .nav-list {
         position: absolute;
         top: 15vh;
-        right: 1px;
+        right: 10px;
         width: 100vw;
-        height: 100vh;
+        height: 88vh;
         background-color: rgba(0, 0, 0, 75%);
         backdrop-filter: blur(40px) !important;
         flex-direction: column;
@@ -755,7 +755,7 @@ nav {
 
     .images-cards {
         border-radius: 10px;
-        width: 11rem;
+        width: 16rem;
     }
 
     /* END CARDS GRID */
@@ -812,7 +812,7 @@ nav {
     }
 
     .logo {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: bold;
         font-family: 'Poppins', sans-serif;
     }
@@ -838,6 +838,11 @@ nav {
         height: 100px;
         left: 60vw;
         top: 5rem !important;
+    }
+
+    .images-cards {
+        border-radius: 10px;
+        width: 14rem;
     }
 }
 
