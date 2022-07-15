@@ -548,9 +548,6 @@ footer .social a:hover {
     padding: 0rem .4rem;
 }
 
-/* @MEDIAS SCREENS */
-
-
 .logo {
     font-size: 2rem;
     font-weight: bold;
@@ -566,9 +563,11 @@ nav {
     font-family: 'Poppins', sans-serif;
     z-index: 1000;
     height: 15vh;
-    background: rgba(0, 0, 0, 75%);
+    background: rgba(0, 0, 0, 30%);
     backdrop-filter: blur(40px);
 }
+
+/* MENU */
 
 .nav-list {
     list-style: none;
@@ -598,6 +597,8 @@ nav {
     z-index: 9;
     backdrop-filter: blur(40px);
 }
+
+/* @MEDIAS SCREENS */
 
 @media screen and (max-width: 1450px) {
     /* START GRIDS */
