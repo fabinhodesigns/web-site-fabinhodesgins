@@ -675,7 +675,7 @@ nav {
     .nav-list {
         position: absolute;
         top: 15vh;
-        right: 10px;
+        right: 11px;
         width: 100vw;
         height: 88vh;
         background-color: rgba(0, 0, 0, 75%);
