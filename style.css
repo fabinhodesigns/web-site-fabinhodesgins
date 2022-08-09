@@ -522,7 +522,7 @@ footer .social a:hover {
     border-radius: 20px;
     background: rgba(255, 255, 255, 25%);
     position: fixed;
-    right:  2rem;
+    right: 2rem;
     bottom: .8rem;
     z-index: 999;
     display: none;
@@ -675,8 +675,8 @@ nav {
     .nav-list {
         position: absolute;
         top: 15vh;
-        right: 11px;
-        width: 100vw;
+        right: 0px;
+        width: 105vw;
         height: 88vh;
         background-color: rgba(0, 0, 0, 75%);
         backdrop-filter: blur(40px) !important;
@@ -722,8 +722,8 @@ nav {
     }
 
     .img-sections2 {
-        width: 9rem;
-        height: 12em;
+        width: 16rem;
+        height: 20em;
         border-radius: 20px;
     }
 
@@ -755,14 +755,14 @@ nav {
 
     .images-cards {
         border-radius: 10px;
-        width: 16rem;
+        width: 10rem;
     }
 
     /* END CARDS GRID */
 
     .img-sections3 {
-        width: 25rem;
-        height: 30em;
+        width: 20rem;
+        height: 24em;
         margin: 1rem;
     }
 }
