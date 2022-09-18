@@ -10,7 +10,7 @@ Project built to promote my skills with video and photo editing.
 - HTML
 - CSS
 - JavaScript
-- Git e Github
+- Git and Github
 
 ## 📞 Contact
 - freitasfabiano08@gmail.com
