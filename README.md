@@ -14,4 +14,4 @@ Project built to promote my skills with video and photo editing.
 
 ## 📞 Contact
 - freitasfabiano08@gmail.com
-- @fabinhofreitastw
+- @ffabiiin
