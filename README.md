@@ -4,7 +4,7 @@
 
 Project built to promote my skills with video and photo editing.
 
-[Click here to view](https://fabinho070.github.io/fabinhodesgins/) ❤️ 
+[Click here to view](https://fabinhodesigns.github.io/fabinhodesgins/) ❤️ 
 
 ## 🛠️ Technologies
 - HTML
